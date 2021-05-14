@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;500&display=swap');
+
+section {
+     padding: 5% 0 5% 0;
+}
+
+.container-fluid {
+     padding: 0 12% 0 12%;
+}
+
+.login-text, .user-text, .menu-text, .cart-text {
+     font-family: "Abril Fatface";
+     font-weight: 800;
+     text-align: center;
+     padding-bottom: 5%;
+}
+
+a {
+     color: #c80030;
+}
+
+a:hover {
+     color: #d83f43;
+}
+
+.navbar {
+     background-color: #f9f9f9;
+     -webkit-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.15);
+     box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.15);
+}
+
+#navbar {
+     justify-content: center;
+}
+
+.navbar-brand {
+     padding-left: 1rem;
+     font-family: "Abril Fatface";
+     font-size: 2.5rem;
+}
+
+.nav-item {
+     font-size: 1.5rem;
+     font-weight: 500;
+     padding-right: 2rem;
+}
+
+#home {
+     background: #ea1d2c;
+     padding-top: 8rem;
+}
+
+.slogan {
+     text-align: right;
+     text-transform: uppercase;
+     color: #fff;
+     font-family: "Roboto";
+     font-size: 3rem;
+     font-weight: 900;
+}
+
+.highlight {
+     color: #f0a500;
+     text-decoration: solid;
+}
+
+.order-button {
+     margin-top: 10%;
+     margin-right: 5%;
+}
+
+.about-button {
+     margin-top: 10%;
+}
+
+.title-image {
+     clip-path: ellipse(240px 130px at center);
+     width: 100%;
+     padding-top: 8%;
+}
+
+#pass {
+     padding-top: 8rem;
+     background-color: #fff;
+}
+
+.pass {
+     font-family: "Abril Fatface";
+     padding-bottom: 5%;
+}
+
+.error {
+     color: red;
+}
+
+.form-padding {
+     padding: 0 30% 0 30%;
+}
+
+form {
+     font-family: "Roboto";
+}
+
+.valid {
+     color: green;
+}
+
+.invalid {
+     color: red;
+}
+
+#users {
+     background-color: #f6f5f5;
+     padding: 2% 0 5% 0;
+     padding-top: 8rem;
+}
+
+.users {
+     font-family: "Abril Fatface";
+     padding-bottom: 5%;
+}
+
+.copyright {
+     text-align: center;
+     padding: 25px 0;
+     background: #ea1d2c;
+}
+
+span {
+     color: #fff;
+}
+
+.eatfood {
+     margin-bottom: 0;
+     color: #fff;
+     font-family: "Abril Fatface";
+     font-size: 1.5rem;
+}
+
+.copyright-text {
+     font-family: "Roboto";
+     font-size: 1.2rem;
+}
+
+@media (max-width: 920px) {
+     #home {
+          text-align: center;
+     }
+     .slogan {
+          font-size: 2rem;
+     }
+     .order-button {
+          margin-right: 2%;
+     }
+     .title-image {
+          clip-path: ellipse(100px 50px at center);
+          width: 80%;
+     }
+     .form-padding {
+          padding: 0 12% 0 12%;
+     }
+}

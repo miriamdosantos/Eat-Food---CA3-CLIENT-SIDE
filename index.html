@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7eb80dbd06.js" crossorigin="anonymous"></script>
+    <script src="js/validatePass.js"></script>
+    <script src="js/menu.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>EatFood</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#home">EatFood</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pass">Pass Validator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#users">Users</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img class="title-image" src="images/home.jpg">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h1 class="slogan">Cooking is not a</h1>
+                    <h1 class="slogan"><span class="highlight">service</span>,</h1>
+                    <h1 class="slogan">it is a way of <span class="highlight">loving.</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pass">
+        <div class="container-fluid form-padding">
+            <h1 class="pass">
+                <center>Pass Validator</center>
+            </h1>
+            <form>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 form-text">
+                            <h6>Your password must have at least:</h6>
+                            <ul>
+                                <li id="letter" class="invalid"><strong>One letter</strong></li>
+                                <li id="capital" class="invalid"><strong>One capital letter</strong></li>
+                                <li id="number" class="invalid"><strong>One number</strong></li>
+                                <li id="symbol" class="invalid"><strong>One special character</strong></li>
+                                <li id="length" class="invalid"><strong>8 characters</strong></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="input-group">
+                                <input type="password" placeholder="Password" class="form-control" id="password"
+                                    aria-describedby="password input" aria-label="Password">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    onclick="validatePass()">Validate</button>
+                            </div>
+                            <span class="error" id="error"></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section id="users">
+        <div class="container-fluid">
+            <h1 class="users">
+                <center>Users</center>
+            </h1>
+            <div class="container">
+                <div class="row" id="usersList"></div>
+            </div>
+    </section>
+    
+    <footer>
+        <div class="copyright">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p class="eatfood">EatFood</p>
+                        <span class="copyright-text"> &copy; 2021 | All rights reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/randomUserApi.js"></script>
+</body>
+
+</html>
