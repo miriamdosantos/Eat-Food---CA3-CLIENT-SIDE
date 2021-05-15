@@ -154,7 +154,7 @@ form {
      margin-bottom: 5%;
 }
 
-.card-title {
+.food-title {
      display: flex;
      justify-content: space-between;
 }
@@ -177,6 +177,66 @@ form {
 
 table {
      margin: auto;
+}
+
+/* Contact */
+
+.container-contact {
+     /* //padding: 0 12% 0 12%; */
+}
+
+.carousel-inner img {
+     width: 100vw;
+     height: 30rem;
+     object-fit: cover;
+}
+
+#contact .section-title {
+     padding-bottom: 0;
+}
+
+#contact .text-success, #contact .text-danger {
+     display: none;
+}
+
+#contact .form-control {
+     background: transparent;
+     border: 0;
+     border-bottom: 1px solid #dddddd;
+     border-radius: 0;
+     box-shadow: none;
+     font-size: 14px;
+     font-weight: normal;
+     margin-bottom: 15px;
+     transition: all ease-in-out 0.4s;
+}
+
+#contact .form-control:hover, #contact .form-control:focus {
+     border-bottom-color: #c9c9c9;
+}
+
+#contact input {
+     height: 55px;
+}
+
+#contact button#cf-submit {
+     background: #ce3232;
+     border-radius: 0;
+     border: 0;
+     color: #ffffff;
+     font-weight: bold;
+     height: 50px;
+}
+
+#contact button#cf-submit:hover {
+     background: #292929;
+     color: #ffffff;
+}
+
+#google-map iframe {
+     border: 0;
+     width: 100%;
+     height: 390px;
 }
 
 /* Footer */
@@ -218,7 +278,7 @@ span {
 /* Styling for smaller screens */
 
 @media (max-width: 920px) {
-     /* Title Page */
+     /* Home */
      #home {
           text-align: center;
      }
@@ -232,8 +292,12 @@ span {
           clip-path: ellipse(100px 50px at center);
           width: 80%;
      }
-     /* Login */
+     /* Users */
      .form-padding {
           padding: 0 12% 0 12%;
+     }
+     /* Contact */
+     .carousel-inner img {
+          height: 18rem;
      }
 }
