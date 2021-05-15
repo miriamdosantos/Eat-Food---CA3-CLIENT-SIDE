@@ -16,7 +16,6 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7eb80dbd06.js" crossorigin="anonymous"></script>
     <script src="js/validatePass.js"></script>
-    <script src="js/menu.js"></script>
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>EatFood</title>
@@ -26,19 +25,23 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg fixed-top">
             <a class="navbar-brand" href="#home">EatFood</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" onclick="handleNav()" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home" onclick="handleNav()">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pass">Pass Validator</a>
+                        <a class="nav-link" href="#pass" onclick="handleNav()">Pass Validator</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#users">Users</a>
+                        <a class="nav-link" href="#users" onclick="handleNav()">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu" onclick="handleNav()">Menu</a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +95,7 @@
             </form>
         </div>
     </section>
-    
+
     <section id="users">
         <div class="container-fluid">
             <h1 class="users">
@@ -102,7 +105,51 @@
                 <div class="row" id="usersList"></div>
             </div>
     </section>
-    
+
+    <section id="menu">
+        <div class="container-fluid">
+            <h2 class="menu-text">MENU</h2>
+            <h5 class="categories">Starters</h5>
+            <div class="row" id="starters"></div>
+            <hr>
+            <h5 class="categories">Main</h5>
+            <div class="row" id="main"></div>
+            <hr>
+            <h5 class="categories">Dessert</h5>
+            <div class="row" id="dessert"></div>
+            <hr>
+            <h5 class="categories">Drinks</h5>
+            <div class="row" id="drinks"></div>
+        </div>
+    </section>
+
+    <section id="checkout">
+        <div class="container-fluid">
+            <button class="btn btn-sm btn-danger checkout-button" onclick="checkout()">CHECKOUT</button>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Cost</th>
+                        <th scope="col">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="checkout-items"></tbody>
+            </table>
+            <hr>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="checkout-totals"></tbody>
+            </table>
+        </div>
+    </section>
+
     <footer>
         <div class="copyright">
             <div class="container-fluid">
@@ -115,8 +162,16 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="js/randomUserApi.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/general.js"></script>
+    <script>
+        window.onload = function () {
+            randomUsers()
+            renderMenu()
+        }
+    </script>
 </body>
 
 </html>
