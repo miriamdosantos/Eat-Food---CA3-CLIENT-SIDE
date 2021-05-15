@@ -121,7 +121,7 @@ function renderItem(item) {
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p class="card-title"><strong>${item.dishName}</strong>
+                                    <p class="food-title"><strong>${item.dishName}</strong>
                                     ${item.isVegetarian ? '<img src="images/vegetarian.png" class="veg-image">' : ''}</p>
                                 </div>
                             </div>
