@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;500&display=swap');
-
 section {
      padding: 5% 0 5% 0;
 }
@@ -23,6 +22,12 @@ a:hover {
      color: #d83f43;
 }
 
+/* Navbar */
+
+.navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28200, 0, 48, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
 .navbar {
      background-color: #f9f9f9;
      -webkit-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.15);
@@ -44,6 +49,8 @@ a:hover {
      font-weight: 500;
      padding-right: 2rem;
 }
+
+/* Title Page */
 
 #home {
      background: #ea1d2c;
@@ -79,6 +86,8 @@ a:hover {
      padding-top: 8%;
 }
 
+/* Pass Validator */
+
 #pass {
      padding-top: 8rem;
      background-color: #fff;
@@ -109,6 +118,8 @@ form {
      color: red;
 }
 
+/* Users */
+
 #users {
      background-color: #f6f5f5;
      padding: 2% 0 5% 0;
@@ -119,6 +130,56 @@ form {
      font-family: "Abril Fatface";
      padding-bottom: 5%;
 }
+
+/* Menu */
+
+#menu {
+     padding-top: 8rem;
+}
+
+.categories {
+     font-family: "Abril Fatface";
+     font-weight: 400;
+     font-size: 1.8rem;
+     text-align: center;
+     padding: 3% 0 5% 0;
+}
+
+.menu-image {
+     width: 100%;
+     padding-bottom: 10px;
+}
+
+.menu-price, .add-order {
+     margin-bottom: 5%;
+}
+
+.card-title {
+     display: flex;
+     justify-content: space-between;
+}
+
+.veg-image {
+     width: 40px;
+}
+
+/* Checkout */
+
+#checkout {
+     background-color: #f6f5f5;
+}
+
+.checkout-button {
+     display: flex;
+     margin: 0 auto;
+     margin-bottom: 2rem;
+}
+
+table {
+     margin: auto;
+}
+
+/* Footer */
 
 .copyright {
      text-align: center;
@@ -142,7 +203,22 @@ span {
      font-size: 1.2rem;
 }
 
+/* Our Food */
+
+#ourfood {
+     padding: 5% 0 5% 0;
+}
+
+.ourfood-title {
+     font-family: "Abril Fatface";
+     font-size: 4rem;
+     text-align: center;
+}
+
+/* Styling for smaller screens */
+
 @media (max-width: 920px) {
+     /* Title Page */
      #home {
           text-align: center;
      }
@@ -156,6 +232,7 @@ span {
           clip-path: ellipse(100px 50px at center);
           width: 80%;
      }
+     /* Login */
      .form-padding {
           padding: 0 12% 0 12%;
      }
