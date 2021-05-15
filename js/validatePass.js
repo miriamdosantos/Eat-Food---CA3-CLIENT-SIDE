@@ -1,9 +1,9 @@
 $(document).ready(function () {
      $('input[type=password]').keyup(function () {
-          var pswd = $(this).val();
+          var pass = $(this).val();
 
           // Lower case letters validation
-          if (pswd.match(/[a-z]/)) {
+          if (pass.match(/[a-z]/)) {
                $('#letter').removeClass('invalid').addClass('valid');
           }
           else {
@@ -11,7 +11,7 @@ $(document).ready(function () {
           }
 
           // Upper case letters validation
-          if (pswd.match(/[A-Z]/)) {
+          if (pass.match(/[A-Z]/)) {
                $('#capital').removeClass('invalid').addClass('valid');
           }
           else {
@@ -19,7 +19,7 @@ $(document).ready(function () {
           }
 
           // Numbers validation
-          if (pswd.match(/\d/)) {
+          if (pass.match(/\d/)) {
                $('#number').removeClass('invalid').addClass('valid');
           }
           else {
@@ -27,7 +27,7 @@ $(document).ready(function () {
           }
 
           // Special characters validation
-          if (pswd.match(/[^A-Za-z0-9]/)) {
+          if (pass.match(/[^A-Za-z0-9]/)) {
                $('#symbol').removeClass('invalid').addClass('valid');
           }
           else {
@@ -35,7 +35,7 @@ $(document).ready(function () {
           }
 
           // Length validation
-          if (pswd.length < 8) {
+          if (pass.length < 8) {
                $('#length').removeClass('valid').addClass('invalid');
           }
           else {
