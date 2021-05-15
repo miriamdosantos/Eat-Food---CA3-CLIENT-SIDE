@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7eb80dbd06.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/validatePass.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>EatFood - Contact Us</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#home">EatFood</a>
+            <button class="navbar-toggler" onclick="handleNav()" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home" onclick="handleNav()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#pass" onclick="handleNav()">Pass Validator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#users" onclick="handleNav()">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#menu" onclick="handleNav()">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section id="contact">
+        <div class="container-contact">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slide1.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide2.jpg" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide3.jpg" alt="New York">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide4.jpg" alt="New York">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                    <div id="google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.2705389178127!2d-6.255215884161848!3d53.33841317997741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99d757fde9%3A0xce1f50427bd4a555!2s21%20Merrion%20St%20Upper%2C%20Dublin%2C%20Irlanda!5e0!3m2!1spt-BR!2sbr!4v1621036406691!5m2!1spt-BR!2sbr"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>
+
+                    <form class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+                        <div class="col-md-12 col-sm-12">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Full name">
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Email address">
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+
+                            <textarea class="form-control" rows="6" id="message" name="message"
+                                placeholder="Enter your message, suggestion, criticism or compliment"></textarea>
+
+                            <button type="button" class="form-control" id="cf-submit" name="submit"
+                                onclick="sendMessage()">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p class="eatfood">EatFood</p>
+                        <span class="copyright-text"> &copy; 2021 | All rights reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/general.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
